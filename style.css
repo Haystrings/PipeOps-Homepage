@@ -1256,7 +1256,7 @@ footer{
         width: 100%;
     }
     .question p{
-        font-size: 2em;
+        font-size: 2.5em;
     }
 }
 @media (max-width: 330px) {
