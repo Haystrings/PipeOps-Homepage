@@ -1035,7 +1035,7 @@ footer{
         width: 80%;
     }
     .techstars{
-        margin-top: 5em;
+        margin-top: 3em;
     }
     .product_lists{
         width: 80%;
@@ -1254,6 +1254,9 @@ footer{
     }
     .big_card{
         width: 100%;
+    }
+    .question p{
+        font-size: 1.8em;
     }
 }
 @media (max-width: 330px) {
