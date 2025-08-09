@@ -17,8 +17,8 @@ header{
     height: 4.5em;
     background: none;
     padding-bottom: 0.2em;
-    position: fixed;
-    z-index: 1000;
+    position: sticky;
+    z-index: 2100;
     align-self: start;
     width: 100%;
 }
@@ -36,7 +36,7 @@ header{
     display: flex;
     align-items: center;
     width: 100%;
-    justify-content: space-between;
+    justify-content: space-between;s
 }
 
 .nav{
@@ -1012,6 +1012,7 @@ footer{
     }
     .nav img{
         margin: 0;
+        margin-left: -2em;
     }
     .left_why{
         width: 100%;
