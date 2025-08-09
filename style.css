@@ -17,7 +17,7 @@ header{
     height: 4.5em;
     background: none;
     padding-bottom: 0.2em;
-    position: sticky;
+    position: fixed;
     z-index: 2100;
     align-self: start;
     width: 100%;
