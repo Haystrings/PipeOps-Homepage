@@ -1,6 +1,10 @@
 *{
     margin: auto;
 }
+
+html{
+    overflow-x: hidden;
+}
 body{
     font-family: "Host Grotesk";
     font-size: 16px;
@@ -241,8 +245,7 @@ video{
 }
 .why_pipeops{
     letter-spacing: 0.2em;
-    margin-bottom: 2em;
-    margin-top: 1em;
+    margin: 1em 0 2em 0;
 }
 .left_why h2{
     background: linear-gradient(to right, rgb(247, 247, 247), rgba(216, 216, 216, 0.7));
@@ -580,9 +583,8 @@ video{
     margin: 0px;
 }
 #narrate{
-    font-size: 1em;
+    font-size: 1.2em;
     margin-top: 0.5em;
-    font-weight: 300;
 }
 .deploy_right{
     position: relative;
@@ -1042,7 +1044,11 @@ footer{
 }
 @media (max-width: 770px) {
     .header_section h1{
+        width: 85%;
+    }
+    #deploy{
         width: 80%;
+        font-size: 2em;
     }
     .techstars{
         margin-top: 2em;
@@ -1056,23 +1062,43 @@ footer{
         height: fit-content;
     }
     .right_why svg{
-        right: 38em;
-        bottom: 4em;
-        justify-self: center;
-        align-self: center;
-
+        position: relative;
+        top: 0;bottom: 0;left: 0;right: 0;
+        margin: 0;
     }
     .right_why{
-        margin: 10em 0 0 0;
+        margin: 0;
         height: 30em;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+        height: 35em;
     }
     .right_why_bg{
         margin-top: -10em;
+        width: 30em;
+        height: 30em;
+        margin: 0 auto;
+        top: 0;bottom: 0;left: 0;right: 0;
+        position: absolute;
+        align-self: center;
+        opacity: 0.2;
+    }
+    .third_section_header{
+        font-size: 1.5em;
+        width: 80%;
     }
     .why_container{height: fit-content;}
     .left_why p{
         font-size: 2em;
         width: 90%;
+        line-height: 2em;
+    }
+    .features{
+        font-size: 1.1em;
+    }
+    .left_why{
+        width: 95%;
     }
     .deploy_container{
         flex-direction: column;
@@ -1083,15 +1109,42 @@ footer{
         gap: 4em;
         margin-top: 3em;
     }
+    .deploy h1{
+        width: 100%;
+    }
+    .deploy{
+        font-size: 1.3em;
+        width: 85%;
+    }
+    .product_lists img{
+        height: 4em;
+    }   
+    .trusted{
+        font-size: 4em;
+        width: 80%;
+    }
     .random_design{
         align-self: center;
         justify-self: center;
-        margin: 0;
-        bottom: 12em;
-        left: 14em;
+        margin: auto;
+        top: 0;bottom: 0;left: 0;right: 0;
     }
     .deploy_container p{
         font-size: 1.6em;
+    }
+    .deploy_right{
+        display: flex;
+    }
+    
+    .deploy_right svg{
+        width: 20em;
+    }
+    .interface button{
+        height: 0.4em;
+    }
+    .review h1{
+        font-size: 4em;
+        margin-top: 2em;
     }
     .FAQ_content{
         flex-direction: column;
@@ -1114,6 +1167,9 @@ footer{
         display: flex;
         flex-direction: column;
         align-items: center;
+    }
+    #narrate{
+        margin-left: 1.2em;
     }
     .get_started{
         width: 90%;
@@ -1155,37 +1211,42 @@ footer{
     .request button{
         width: 10em;
     }
-.footer_container{
-    flex-wrap: wrap;
-}
-.footer_logos{
-    width: 100%;
-    margin-bottom: 6em;
-}
-.links label{
-    font-size: 1.1em;
-}
-.links a{
-    font-size: 1.4em;
-}
-.footnote_container{
-    width: 100%;
-}
-.random_design_3{
-    margin: 0;
-    top: 80em;
-    filter: blur(8em);
-    z-index: 1000;
-}
-}
-@media (max-width:600px) {
-    body{
-        font-size: 8px;
+    .footer_container{
+        flex-wrap: wrap;
     }
+    .footer_logos{
+        width: 100%;
+        margin-bottom: 6em;
+    }
+    .links label{
+        font-size: 1.1em;
+    }
+    .links a{
+        font-size: 1.4em;
+    }
+    .footnote_container{
+        width: 100%;
+    }
+    .random_design_3{
+        margin: 0;
+        filter: blur(8em);
+        z-index: 1000;
+    }
+    .discover_more{
+        font-size: 1.3em;
+    }
+    }
+    @media (max-width:600px) {
+        body{
+            font-size: 8px;
+        }
 }
 @media (max-width:450px) {
     body{
         font-size: 7px;
+    }
+    header{
+        max-width: 100%;
     }
     .header_section{
         margin-top: 20em;
@@ -1193,12 +1254,27 @@ footer{
     .third_section_header{
         font-size: 8px;
     }
+    .video{
+        width: 86%;
+        background: none;
+    }
+    .screen{
+        width: 100%;
+        background: none;
+    }
+    #bg-video{
+        width: 100%;
+        background: none;
+    }
     .achievement{
         display: flex;
         flex-direction: column;
         gap: 5em;
         font-size: 10px;
         width: 100%;
+    }
+    .features{
+        font-size: 1em;
     }
     .deploy{
         font-size: 8px;
@@ -1210,23 +1286,11 @@ footer{
         margin-top: 15em;
         margin-bottom: -8em;
     }
-    .right_why svg{
-        width: 40em;
-        align-self: center;
-        right: 48em;
-    }
     .nav img{
         width: 20em;
     }
     .right_why{
-        margin-top: 30em;
-    }
-    .deploy_right svg{
-        width: 45em;
-    }
-    .random_design{
-       bottom: 25em;
-       left: 18em;
+        margin-top: 5em;
     }
     .footer_container{
         flex-direction: column;
@@ -1271,9 +1335,34 @@ footer{
     .answer p{
         font-size: 1.8em;
     }
+    .deploy_right svg{
+        height: 20em;
+    }
+}
+@media (max-width:380px){
+    body{
+        font-size: 5px;
+    }
+    .nav_buttons button{
+        padding: 0;
+        font-size: 1px;
+        width: 1px;
+    }
 }
 @media (max-width: 330px) {
     body{
-        font-size: 5px;
+        font-size: 4px;
+    }
+    header{
+        align-self: center;
+        width: 100%;
+    }
+    .header_container{
+        width: 100%;
+    }
+    .card_details{
+        font-size: 0.1em;
+        display: flex;
+        padding-top: 7em;
     }
 }
